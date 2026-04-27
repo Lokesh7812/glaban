@@ -1,0 +1,194 @@
+G LABAN (PREMIUM, RESPONSIVE, PRODUCTION-READY)
+
+Create a modern, premium, fully responsive website for an Arabian dessert shop named G Laban.
+Design must strictly follow a royal blue + white theme inspired by the brand logo.
+Overall feel: Premium • Arabian • Elegant • Appetizing • Trustworthy • Modern.
+
+Use soft curves, rounded cards, subtle shadows, spacious layout, and elegant typography with a slight Middle Eastern character.
+
+🏪 Business Information
+
+Shop Name: G Laban
+Tagline: Taste the richness. Feel the tradition. Experience G Laban.
+
+Address:
+NO:/ 389, Rajiv Gandhi Salai, opposite to Pacifica Tech Park, Navalur, Chennai, Tamil Nadu – 600130
+
+Phone: 9884909199
+Franchise / WhatsApp: 9962909100
+Email: glabanindia@gmail.com
+
+Working Days: All Days
+Since: 2026
+
+Map Link (embed as Google Map):
+https://share.google/eEBK1H06QxRL3Asmw
+
+Social Media:
+Instagram: https://www.instagram.com/g_laban4
+
+Facebook: https://www.facebook.com/share/14ZqqPwmK5E/
+
+YouTube: https://youtube.com/@glaban4
+
+🎨 Design System
+Primary Color: Royal Blue (from logo)
+Background: White with light blue section tints
+Headings: Elegant serif style (Arabic feel)
+Body font: Clean sans-serif
+Rounded corners: 20px average
+Section separators: wave/curve style
+Max width container: 1200px centered
+Buttons: Rounded, blue background, white text, soft hover lift
+Card-based UI with soft shadows
+🧭 Header (Sticky)
+
+Left: Logo
+Right: Menu (Home, About, Menu, Contact) + Order on WhatsApp CTA button
+
+Transparent over hero → turns white with shadow on scroll.
+
+🏠 HOME PAGE
+Hero Section (full height)
+
+Headline:
+“Authentic Arabian Desserts Now in Chennai”
+
+Subtext:
+Indulge in rich, creamy, and exotic laban-based desserts crafted with premium ingredients and Middle Eastern tradition.
+
+CTA Buttons:
+
+Explore the Menu
+Get Directions
+Order on WhatsApp
+
+Right side: dessert image collage / placeholder.
+
+Why G Laban (6 icon cards)
+Authentic Arabian Flavours
+Signature Laban-Based Treats
+Premium Quality Ingredients
+Freshly Prepared Every Time
+Trending Dessert Concept
+Customer-First Experience
+Featured Desserts Preview
+
+Show 4 elegant cards with image placeholders.
+Button: Explore Full Menu
+
+About Preview Strip
+
+Split layout: short story + image. Curved separators.
+
+Visit Us
+
+Address, timings, phone, WhatsApp, and embedded map.
+
+Strong CTA Banner (blue background)
+
+Text:
+Visit G Laban Today for an Arabian Dessert Experience
+
+Buttons: Directions | WhatsApp
+
+👤 ABOUT PAGE
+
+Title: Our Story
+
+Use the provided story content. Centered readable layout (800px width).
+Repeat icon grid for “What makes G Laban special”.
+
+Closing CTA strip.
+
+🍮 MENU PAGE (with image placeholders)
+
+Create responsive grid cards.
+
+Each card contains:
+
+Image placeholder (4:3)
+Item name
+Category badge: Arabian Desserts
+Description
+Menu Items
+
+Cheese Bomb
+Salankatia
+Koushri
+Lou’a
+Heba Cake
+Fazea Chocola Cake
+De Paris
+
+(Add given descriptions)
+
+Top filter bar (non-functional UI):
+All | Cakes | Laban Specials | Kunafa Specials
+
+📞 CONTACT PAGE
+
+Top contact cards:
+
+Call
+WhatsApp
+Email
+
+Middle: Map + address + working days
+
+Bottom: Social icons
+
+CTA:
+Visit G Laban Today for a Dessert Experience Like Never Before
+
+🦶 FOOTER
+
+Dark blue background.
+
+Columns:
+
+Logo + tagline
+Quick links
+Contact info
+Social icons
+
+Copyright: © 2026 G Laban
+
+🖼️ Image Placeholders
+
+All menu and featured items must use elegant placeholders with text:
+“Dessert Image Coming Soon”
+
+⚙️ REQUIRED FEATURES (IMPORTANT)
+
+Include these production features:
+
+Fully responsive (mobile-first)
+Sticky header
+Smooth scroll
+WhatsApp floating button (bottom right)
+Google Map embed
+SEO titles & meta descriptions for each page
+Semantic HTML5 structure
+Lazy loading images
+Fast loading optimized layout
+Clean section spacing and alignment
+Hover animations on cards and buttons
+Reusable card & button components
+Social media links
+Future-ready structure for adding real images
+Basic on-page SEO setup
+Favicon from logo
+404 page styled same theme
+Scroll-to-top button
+Accessible contrast and readable fonts
+🎯 CTA TEXTS TO USE THROUGHOUT
+Explore the Menu
+Taste Arabian Delight
+Visit Our Shop
+Order on WhatsApp
+Get Directions
+Experience G Laban
+✅ EXPECTED RESULT
+
+A luxury, elegant, Arabian-themed dessert website that looks premium on mobile and desktop, matches the royal blue brand identity, and is ready for real content and images to be added later.
