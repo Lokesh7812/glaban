@@ -4,6 +4,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Layout } from "@/components/Layout";
+import { Preloader } from "@/components/Preloader";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import HomePage from "@/pages/home";
@@ -56,6 +57,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
+        <Preloader />
         <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
           <ScrollToTopOnNavigate />
           <Router />
