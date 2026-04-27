@@ -95,45 +95,49 @@ export function Hero() {
           </motion.div>
         </div>
 
-        {/* Dessert collage */}
-        <div className="lg:col-span-5 relative h-[420px] sm:h-[520px] lg:h-[560px]">
-          <motion.div
-            initial={{ opacity: 0, y: 30, rotate: -3 }}
-            animate={{ opacity: 1, y: 0, rotate: -4 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="absolute top-4 left-2 w-[58%] h-[58%] rounded-[28px] overflow-hidden shadow-2xl border-4 border-white/90"
-          >
-            <DessertPlaceholder variant={0} />
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 30, rotate: 5 }}
-            animate={{ opacity: 1, y: 0, rotate: 6 }}
-            transition={{ duration: 0.8, delay: 0.35 }}
-            className="absolute bottom-4 right-0 w-[60%] h-[58%] rounded-[28px] overflow-hidden shadow-2xl border-4 border-white/90"
-          >
-            <DessertPlaceholder variant={1} />
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, scale: 0.85 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.7, delay: 0.55 }}
-            className="absolute top-[34%] right-[28%] w-[34%] h-[34%] rounded-full overflow-hidden shadow-2xl border-4 border-accent/80"
-          >
-            <DessertPlaceholder variant={2} />
-          </motion.div>
-          {/* Decorative arabic medallion */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.6 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.7, delay: 0.7 }}
-            className="absolute -bottom-2 -left-2 h-24 w-24 rounded-full bg-accent text-primary grid place-items-center shadow-xl rotate-[-12deg]"
-            aria-hidden="true"
-          >
-            <div className="text-center leading-tight">
-              <div className="font-serif text-[10px] uppercase tracking-[0.18em]">Since</div>
-              <div className="font-serif text-2xl font-bold">{SITE.since}</div>
+        {/* Dessert image cards — two clean rectangles, side-by-side */}
+        <div className="lg:col-span-5 relative">
+          <div className="relative mx-auto max-w-md lg:max-w-none">
+            {/* Optional depth layer (hidden on small screens, only shown if there's room) */}
+            <div
+              className="hidden xl:block absolute -right-6 top-10 w-[46%] aspect-[4/5] rounded-[20px] bg-white/10 border border-white/15 backdrop-blur-sm"
+              aria-hidden="true"
+            />
+
+            <div className="relative grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6">
+              <motion.div
+                initial={{ opacity: 0, y: 24 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: 0.2 }}
+                className="group relative aspect-[4/5] rounded-[20px] bg-white border border-[#EAEAEA] shadow-[0_25px_60px_-25px_rgba(0,0,0,0.45)] overflow-hidden transition-transform duration-500 ease-out will-change-transform hover:-translate-y-1.5 hover:shadow-[0_35px_80px_-25px_rgba(0,0,0,0.55)] sm:mt-0"
+              >
+                <DessertPlaceholder variant={0} />
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 24 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: 0.35 }}
+                className="group relative aspect-[4/5] rounded-[20px] bg-white border border-[#EAEAEA] shadow-[0_25px_60px_-25px_rgba(0,0,0,0.45)] overflow-hidden transition-transform duration-500 ease-out will-change-transform hover:-translate-y-1.5 hover:shadow-[0_35px_80px_-25px_rgba(0,0,0,0.55)] sm:mt-10"
+              >
+                <DessertPlaceholder variant={1} />
+              </motion.div>
             </div>
-          </motion.div>
+
+            {/* Since badge — kept as a tasteful accent, no rotation */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.85 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.55 }}
+              className="hidden sm:flex absolute -bottom-5 left-2 lg:-left-4 h-20 w-20 rounded-full bg-accent text-primary items-center justify-center shadow-xl"
+              aria-hidden="true"
+            >
+              <div className="text-center leading-tight">
+                <div className="font-serif text-[10px] uppercase tracking-[0.18em]">Since</div>
+                <div className="font-serif text-2xl font-bold">{SITE.since}</div>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </div>
 
