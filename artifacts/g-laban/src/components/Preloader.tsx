@@ -16,13 +16,13 @@ export function Preloader() {
 
     const fadeTimer = window.setTimeout(() => {
       setFadingOut(true);
-    }, 2200);
+    }, 2600);
 
     const removeTimer = window.setTimeout(() => {
       sessionStorage.setItem(SESSION_KEY, "1");
       document.body.style.overflow = "";
       setShouldRender(false);
-    }, 2900);
+    }, 3400);
 
     return () => {
       window.clearTimeout(fadeTimer);
@@ -56,16 +56,56 @@ export function Preloader() {
 
       <div className="preloader-content">
         <div className="preloader-logo-wrap">
-          <span className="preloader-glow" aria-hidden="true" />
-          <span className="preloader-sweep" aria-hidden="true" />
-          <img
-            src="/logo.png"
-            alt="G Läbän"
-            className="preloader-logo"
-            draggable={false}
-          />
+          {/* Outer rotating ring */}
+          <svg
+            className="preloader-ring"
+            viewBox="0 0 100 100"
+            aria-hidden="true"
+          >
+            <circle
+              cx="50"
+              cy="50"
+              r="46"
+              fill="none"
+              stroke="rgba(208, 168, 92, 0.18)"
+              strokeWidth="2"
+            />
+            <circle
+              cx="50"
+              cy="50"
+              r="46"
+              fill="none"
+              stroke="hsl(var(--accent))"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeDasharray="60 230"
+              className="preloader-ring-arc"
+            />
+          </svg>
+
+          {/* Inner card */}
+          <div className="preloader-card">
+            <span className="preloader-glow" aria-hidden="true" />
+            <span className="preloader-sweep" aria-hidden="true" />
+            <img
+              src="/logo.png"
+              alt="G Läbän"
+              className="preloader-logo"
+              draggable={false}
+            />
+          </div>
         </div>
-        <p className="preloader-text">Preparing your dessert experience…</p>
+
+        <p className="preloader-text">
+          <span>Preparing your dessert experience</span>
+          <span className="preloader-dot">.</span>
+          <span className="preloader-dot">.</span>
+          <span className="preloader-dot">.</span>
+        </p>
+
+        <div className="preloader-bar" aria-hidden="true">
+          <span className="preloader-bar-fill" />
+        </div>
       </div>
     </div>
   );
