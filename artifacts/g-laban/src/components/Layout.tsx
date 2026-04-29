@@ -9,7 +9,11 @@ export function Layout({ children }: { children: ReactNode }) {
   // the header should stay transparent on top of any "/" route or any page
   // that opens with a deep band.
   const transparentHero =
-    location === "/" || location === "/about" || location === "/menu" || location === "/contact";
+    location === "/" ||
+    location === "/about" ||
+    location === "/menu" ||
+    location === "/franchise" ||
+    location === "/contact";
 
   return (
     <div className="min-h-screen flex flex-col bg-background">

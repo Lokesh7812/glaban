@@ -40,13 +40,16 @@ export default function ContactPage() {
         </svg>
         <div className="container-page text-center max-w-3xl mx-auto relative">
           <div className="font-arabic text-accent text-sm tracking-[0.3em] uppercase">
-            ✦ Visit Us ✦
+            ✦ Visit Us · <span className="font-tamil normal-case tracking-normal text-base" lang="ta">வருக, வருக</span> ✦
           </div>
           <h1 className="mt-3 font-serif text-5xl md:text-6xl font-semibold leading-[1.05]">
             Come <span className="italic text-accent">Find Us</span>
           </h1>
           <p className="mt-5 text-lg text-white/75">
-            Whether you'd like to drop by, place an order, or simply say hello — we'd love to hear from you.
+            Whether you'd like to drop by, place an order, or simply say hello — we'd love to hear from you.{" "}
+            <span className="font-tamil text-white" lang="ta">
+              நவலூரில் சந்திப்போம்.
+            </span>
           </p>
         </div>
 

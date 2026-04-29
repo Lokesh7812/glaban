@@ -49,13 +49,16 @@ export default function HomePage() {
       <section className="container-page py-20 md:py-28">
         <div className="text-center max-w-2xl mx-auto">
           <div className="font-arabic text-accent text-sm tracking-[0.3em] uppercase">
-            ✦ The G Laban Difference ✦
+            ✦ The G Laban Difference · <span className="font-tamil normal-case tracking-normal text-base text-accent" lang="ta">எங்கள் சிறப்பு</span> ✦
           </div>
           <h2 className="mt-3 font-serif text-4xl md:text-5xl text-primary font-semibold leading-tight">
             Why <span className="italic">G Laban</span>
           </h2>
           <p className="mt-4 text-muted-foreground text-base md:text-lg leading-relaxed">
-            Six reasons our desserts are unlike anything else in the city.
+            Six reasons our desserts are unlike anything else in the city —{" "}
+            <span className="font-tamil text-primary/80" lang="ta">
+              ஒவ்வொரு கடியும் ஒரு அனுபவம்.
+            </span>
           </p>
         </div>
 
@@ -72,7 +75,7 @@ export default function HomePage() {
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
             <div className="max-w-xl">
               <div className="font-arabic text-accent text-sm tracking-[0.3em] uppercase">
-                ✦ Signature Treats ✦
+                ✦ Signature Treats · <span className="font-tamil normal-case tracking-normal text-base text-accent" lang="ta">சிறப்பு இனிப்புகள்</span> ✦
               </div>
               <h2 className="mt-3 font-serif text-4xl md:text-5xl text-primary font-semibold leading-tight">
                 Featured Desserts
@@ -102,6 +105,7 @@ export default function HomePage() {
                 <DessertCard
                   name={item.name}
                   arabicName={item.arabicName}
+                  tamilName={item.tamilName}
                   category="Arabian Desserts"
                   description={item.description}
                   variant={i}
@@ -147,10 +151,10 @@ export default function HomePage() {
             transition={{ duration: 0.6 }}
           >
             <div className="font-arabic text-accent text-sm tracking-[0.3em] uppercase">
-              ✦ Our Story ✦
+              ✦ Our Story · <span className="font-tamil normal-case tracking-normal text-base text-accent" lang="ta">எங்கள் கதை</span> ✦
             </div>
             <h2 className="mt-3 font-serif text-4xl md:text-5xl text-primary font-semibold leading-tight">
-              A taste of the Middle East, <span className="italic">at home</span> in Chennai.
+              A taste of the Middle East, <span className="italic">at home</span> in <span className="font-tamil text-primary" lang="ta">சென்னை</span>.
             </h2>
             <p className="mt-5 text-muted-foreground text-base md:text-lg leading-relaxed">
               G Laban began with a simple craving — for the velvety laban desserts,
@@ -177,7 +181,7 @@ export default function HomePage() {
         <div className="container-page py-20 md:py-28">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <div className="font-arabic text-accent text-sm tracking-[0.3em] uppercase">
-              ✦ Visit Us ✦
+              ✦ Visit Us · <span className="font-tamil normal-case tracking-normal text-base text-accent" lang="ta">வருக, வருக</span> ✦
             </div>
             <h2 className="mt-3 font-serif text-4xl md:text-5xl text-primary font-semibold leading-tight">
               Find Your Way to G Laban

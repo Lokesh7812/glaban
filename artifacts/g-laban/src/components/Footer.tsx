@@ -44,16 +44,7 @@ export function Footer() {
               <li><Link href="/about" className="hover:text-accent transition-colors">Our Story</Link></li>
               <li><Link href="/menu" className="hover:text-accent transition-colors">Menu</Link></li>
               <li><Link href="/contact" className="hover:text-accent transition-colors">Visit Us</Link></li>
-              <li>
-                <a
-                  href={SITE.whatsapp.franchise}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-accent transition-colors"
-                >
-                  Franchise Enquiry
-                </a>
-              </li>
+              <li><Link href="/franchise" className="hover:text-accent transition-colors">Franchise Enquiry</Link></li>
             </ul>
           </div>
 

@@ -18,6 +18,15 @@ export const SITE = {
     franchise:
       "https://wa.me/919962909100?text=Hello%20G%20Laban%2C%20I%27m%20interested%20in%20a%20franchise%20enquiry.",
   },
+  franchise: {
+    display: "+91 99629 09100",
+    tel: "tel:+919962909100",
+    whatsapp:
+      "https://wa.me/919962909100?text=Hello%20G%20Laban%2C%20I%27m%20interested%20in%20a%20franchise%20enquiry.",
+    email: "glabanindia@gmail.com",
+    emailHref:
+      "mailto:glabanindia@gmail.com?subject=Franchise%20Enquiry%20%E2%80%94%20G%20Laban",
+  },
   email: {
     display: "glabanindia@gmail.com",
     href: "mailto:glabanindia@gmail.com",

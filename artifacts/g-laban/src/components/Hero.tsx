@@ -50,15 +50,25 @@ export function Hero() {
             Chennai.
           </motion.h1>
 
+          <motion.div
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.12 }}
+            className="mt-4 font-tamil text-xl md:text-2xl text-accent/90"
+            lang="ta"
+          >
+            ருசி · மரபு · நவலூரில் ஒரு புதிய சுவை
+          </motion.div>
+
           <motion.p
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.18 }}
-            className="mt-7 max-w-xl text-base md:text-lg text-white/75 leading-relaxed"
+            className="mt-6 max-w-xl text-base md:text-lg text-white/75 leading-relaxed"
           >
             Indulge in rich, creamy, and exotic laban-based desserts crafted with
             premium ingredients and Middle Eastern tradition — served in the heart
-            of Navalur.
+            of <span className="font-tamil text-white" lang="ta">நவலூர்</span>.
           </motion.p>
 
           <motion.div

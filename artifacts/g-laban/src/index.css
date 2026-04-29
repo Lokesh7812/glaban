@@ -493,3 +493,10 @@
   .preloader-glow, .preloader-sweep { animation: none; }
 }
 
+
+
+.font-tamil {
+  font-family: "Noto Serif Tamil", "Noto Sans Tamil", "Cormorant Garamond", serif;
+  font-feature-settings: "kern";
+}
+

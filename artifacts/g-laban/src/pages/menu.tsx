@@ -38,14 +38,17 @@ export default function MenuPage() {
         </svg>
         <div className="container-page text-center max-w-3xl mx-auto relative">
           <div className="font-arabic text-accent text-sm tracking-[0.3em] uppercase">
-            ✦ The Menu ✦
+            ✦ The Menu · <span className="font-tamil normal-case tracking-normal text-base" lang="ta">எங்கள் இனிப்புகள்</span> ✦
           </div>
           <h1 className="mt-3 font-serif text-5xl md:text-6xl font-semibold leading-[1.05]">
             Our Signature <span className="italic text-accent">Arabian</span> Desserts
           </h1>
           <p className="mt-5 text-lg text-white/75">
             Seven indulgences. Each one made fresh, in small batches, the
-            traditional way.
+            traditional way —{" "}
+            <span className="font-tamil text-white" lang="ta">
+              ஒவ்வொன்றும் ஒரு சிறப்பு.
+            </span>
           </p>
         </div>
 
@@ -101,6 +104,7 @@ export default function MenuPage() {
                 <DessertCard
                   name={item.name}
                   arabicName={item.arabicName}
+                  tamilName={item.tamilName}
                   category="Arabian Desserts"
                   description={item.description}
                   variant={i}

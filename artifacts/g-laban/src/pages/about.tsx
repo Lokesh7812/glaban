@@ -52,7 +52,7 @@ export default function AboutPage() {
             transition={{ duration: 0.5 }}
             className="font-arabic text-accent text-sm tracking-[0.3em] uppercase"
           >
-            ✦ Our Story ✦
+            ✦ Our Story · <span className="font-tamil normal-case tracking-normal text-base" lang="ta">எங்கள் கதை</span> ✦
           </motion.div>
           <motion.h1
             initial={{ opacity: 0, y: 24 }}
@@ -61,7 +61,7 @@ export default function AboutPage() {
             className="mt-3 font-serif text-5xl md:text-6xl font-semibold leading-[1.05]"
           >
             A passion for <span className="italic text-accent">Arabian</span> dessert,<br />
-            served from Chennai.
+            served from <span className="font-tamil text-accent" lang="ta">சென்னை</span>.
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
@@ -69,7 +69,10 @@ export default function AboutPage() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mt-5 text-lg text-white/75"
           >
-            G Laban is more than a dessert shop — it's a small embassy of Middle Eastern sweetness in our city.
+            G Laban is more than a dessert shop — it's a small embassy of Middle Eastern sweetness in our city.{" "}
+            <span className="font-tamil text-white" lang="ta">
+              ருசியின் ஒரு புதிய அத்தியாயம்.
+            </span>
           </motion.p>
         </div>
 
@@ -147,7 +150,7 @@ export default function AboutPage() {
         <div className="container-page py-20 md:py-28">
           <div className="text-center max-w-2xl mx-auto">
             <div className="font-arabic text-accent text-sm tracking-[0.3em] uppercase">
-              ✦ What Makes Us Special ✦
+              ✦ What Makes Us Special · <span className="font-tamil normal-case tracking-normal text-base text-accent" lang="ta">எங்கள் வாக்குறுதி</span> ✦
             </div>
             <h2 className="mt-3 font-serif text-4xl md:text-5xl text-primary font-semibold leading-tight">
               The G Laban Promise

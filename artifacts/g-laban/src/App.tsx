@@ -10,6 +10,7 @@ import { ScrollToTop } from "@/components/ScrollToTop";
 import HomePage from "@/pages/home";
 import AboutPage from "@/pages/about";
 import MenuPage from "@/pages/menu";
+import FranchisePage from "@/pages/franchise";
 import ContactPage from "@/pages/contact";
 import NotFound from "@/pages/not-found";
 
@@ -39,6 +40,11 @@ function Router() {
       <Route path="/menu">
         <Layout>
           <MenuPage />
+        </Layout>
+      </Route>
+      <Route path="/franchise">
+        <Layout>
+          <FranchisePage />
         </Layout>
       </Route>
       <Route path="/contact">

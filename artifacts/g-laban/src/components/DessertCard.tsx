@@ -7,9 +7,10 @@ export type DessertCardProps = {
   description: string;
   variant?: number;
   arabicName?: string;
+  tamilName?: string;
 };
 
-export function DessertCard({ name, category, description, variant = 0, arabicName }: DessertCardProps) {
+export function DessertCard({ name, category, description, variant = 0, arabicName, tamilName }: DessertCardProps) {
   return (
     <motion.article
       whileHover={{ y: -6 }}
@@ -27,7 +28,7 @@ export function DessertCard({ name, category, description, variant = 0, arabicNa
       </div>
 
       <div className="p-6">
-        <div className="flex items-baseline justify-between gap-3 mb-2">
+        <div className="flex items-baseline justify-between gap-3 mb-1">
           <h3 className="font-serif text-xl md:text-2xl text-primary font-semibold leading-tight">
             {name}
           </h3>
@@ -37,6 +38,11 @@ export function DessertCard({ name, category, description, variant = 0, arabicNa
             </span>
           )}
         </div>
+        {tamilName && (
+          <div className="font-tamil text-sm text-primary/65 mb-2.5" lang="ta">
+            {tamilName}
+          </div>
+        )}
         <p className="text-sm text-muted-foreground leading-relaxed">
           {description}
         </p>
