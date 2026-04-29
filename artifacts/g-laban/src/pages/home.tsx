@@ -19,7 +19,7 @@ import { CTABanner } from "@/components/CTABanner";
 import { MapEmbed } from "@/components/MapEmbed";
 import { Button } from "@/components/Button";
 import { OrnamentDivider } from "@/components/SectionDivider";
-import { DessertPlaceholder } from "@/components/DessertPlaceholder";
+import hebaCakeImg from "@assets/pistachio_belgium_chocolate_1777474192821.jpeg";
 import { MENU } from "@/lib/menu";
 import { SITE } from "@/lib/site";
 import { useSeo } from "@/lib/seo";
@@ -109,6 +109,9 @@ export default function HomePage() {
                   category="Arabian Desserts"
                   description={item.description}
                   variant={i}
+                  image={item.image}
+                  imageFit={item.imageFit}
+                  imageBg={item.imageBg}
                 />
               </motion.div>
             ))}
@@ -133,8 +136,14 @@ export default function HomePage() {
             transition={{ duration: 0.6 }}
             className="relative"
           >
-            <div className="aspect-[4/5] rounded-[28px] overflow-hidden shadow-xl">
-              <DessertPlaceholder variant={3} />
+            <div className="aspect-[4/5] rounded-[28px] overflow-hidden shadow-xl bg-gradient-to-br from-[hsl(224,72%,16%)] via-primary to-[hsl(224,72%,22%)] flex items-center justify-center">
+              <img
+                src={hebaCakeImg}
+                alt="G Laban Heba Cake — signature Arabian dessert"
+                className="w-full h-full object-contain p-6"
+                loading="lazy"
+                draggable={false}
+              />
             </div>
             <div className="absolute -bottom-6 -right-6 hidden md:block bg-accent text-primary px-6 py-5 rounded-2xl shadow-xl max-w-[200px]">
               <div className="font-serif text-2xl font-bold leading-none">{SITE.since}</div>

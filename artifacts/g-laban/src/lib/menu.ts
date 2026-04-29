@@ -1,3 +1,11 @@
+import cheeseBombImg from "@assets/cheesebomb_1777474192823.jpeg";
+import salankatiaImg from "@assets/Salankatia__1777474192820.png";
+import koushriImg from "@assets/Koushri_1777474192821.png";
+import louaImg from "@assets/lou_a_1777474192820.png";
+import hebaCakeImg from "@assets/pistachio_belgium_chocolate_1777474192821.jpeg";
+import fazeaCakeImg from "@assets/fazea_choko_1777474192822.jpeg";
+import deParisImg from "@assets/de_paris_1777474192822.jpeg";
+
 export type MenuCategory = "Cakes" | "Laban Specials" | "Kunafa Specials";
 
 export type MenuItem = {
@@ -7,6 +15,9 @@ export type MenuItem = {
   tamilName?: string;
   category: MenuCategory;
   description: string;
+  image: string;
+  imageFit?: "cover" | "contain";
+  imageBg?: "light" | "dark";
 };
 
 export const MENU: MenuItem[] = [
@@ -18,6 +29,9 @@ export const MENU: MenuItem[] = [
     category: "Kunafa Specials",
     description:
       "A golden kunafa shell wrapped around a molten heart of Arabian cheese — crisp on the outside, gloriously stretchy within, finished with rose-kissed syrup.",
+    image: cheeseBombImg,
+    imageFit: "contain",
+    imageBg: "dark",
   },
   {
     id: "salankatia",
@@ -27,6 +41,9 @@ export const MENU: MenuItem[] = [
     category: "Laban Specials",
     description:
       "A delicate Levantine layered dessert of cream, slow-cooked milk, and toasted nuts — rich, silky, and unmistakably Arabian.",
+    image: salankatiaImg,
+    imageFit: "cover",
+    imageBg: "light",
   },
   {
     id: "koushri",
@@ -36,6 +53,9 @@ export const MENU: MenuItem[] = [
     category: "Laban Specials",
     description:
       "A house signature built from layers of laban-infused cream, crisp pastry, and pistachio — a quiet luxury in every spoon.",
+    image: koushriImg,
+    imageFit: "cover",
+    imageBg: "light",
   },
   {
     id: "loua",
@@ -45,6 +65,9 @@ export const MENU: MenuItem[] = [
     category: "Kunafa Specials",
     description:
       "Bite-sized golden parcels of crispy semolina dough, soaked in fragrant saffron syrup and crowned with crushed pistachio.",
+    image: louaImg,
+    imageFit: "cover",
+    imageBg: "light",
   },
   {
     id: "heba-cake",
@@ -54,6 +77,9 @@ export const MENU: MenuItem[] = [
     category: "Cakes",
     description:
       "Our gentle, cloud-light Arabian-inspired sponge layered with creamy laban frosting and a whisper of cardamom.",
+    image: hebaCakeImg,
+    imageFit: "cover",
+    imageBg: "light",
   },
   {
     id: "fazea-chocola-cake",
@@ -63,6 +89,9 @@ export const MENU: MenuItem[] = [
     category: "Cakes",
     description:
       "A bold, deeply indulgent chocolate cake — Arabian cocoa meets velvet ganache, finished with a touch of edible gold leaf.",
+    image: fazeaCakeImg,
+    imageFit: "contain",
+    imageBg: "dark",
   },
   {
     id: "de-paris",
@@ -72,6 +101,9 @@ export const MENU: MenuItem[] = [
     category: "Cakes",
     description:
       "A Parisian-Arabian crossover — airy mousse, hazelnut praline crunch, and a delicate laban cream finish that melts on the tongue.",
+    image: deParisImg,
+    imageFit: "contain",
+    imageBg: "dark",
   },
 ];
 

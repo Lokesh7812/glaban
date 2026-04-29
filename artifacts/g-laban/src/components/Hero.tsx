@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 import { MapPin, MessageCircle, ArrowRight } from "lucide-react";
 import { Button } from "./Button";
-import { DessertPlaceholder } from "./DessertPlaceholder";
 import { SITE } from "@/lib/site";
+import louaImg from "@assets/lou_a_1777474192820.png";
+import cheeseBombImg from "@assets/cheesebomb_1777474192823.jpeg";
 
 export function Hero() {
   return (
@@ -119,9 +120,19 @@ export function Hero() {
                 initial={{ opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.2 }}
-                className="group relative aspect-[4/5] rounded-[20px] bg-white border border-[#EAEAEA] shadow-[0_25px_60px_-25px_rgba(0,0,0,0.45)] overflow-hidden transition-transform duration-500 ease-out will-change-transform hover:-translate-y-1.5 hover:shadow-[0_35px_80px_-25px_rgba(0,0,0,0.55)] sm:mt-0"
+                className="group relative aspect-[4/5] rounded-[20px] bg-gradient-to-br from-[#1a1a1a] via-black to-[#1a1a1a] border border-white/10 shadow-[0_25px_60px_-25px_rgba(0,0,0,0.55)] overflow-hidden transition-transform duration-500 ease-out will-change-transform hover:-translate-y-1.5 hover:shadow-[0_35px_80px_-25px_rgba(0,0,0,0.65)] sm:mt-0"
               >
-                <DessertPlaceholder variant={0} />
+                <img
+                  src={cheeseBombImg}
+                  alt="G Laban Cheese Bomb"
+                  loading="eager"
+                  draggable={false}
+                  className="w-full h-full object-contain p-3 transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-[10px] uppercase tracking-[0.18em] text-white/80">
+                  <span className="font-serif text-accent">Signature</span>
+                  <span>Cheese Bomb</span>
+                </div>
               </motion.div>
 
               <motion.div
@@ -130,7 +141,17 @@ export function Hero() {
                 transition={{ duration: 0.7, delay: 0.35 }}
                 className="group relative aspect-[4/5] rounded-[20px] bg-white border border-[#EAEAEA] shadow-[0_25px_60px_-25px_rgba(0,0,0,0.45)] overflow-hidden transition-transform duration-500 ease-out will-change-transform hover:-translate-y-1.5 hover:shadow-[0_35px_80px_-25px_rgba(0,0,0,0.55)] sm:mt-10"
               >
-                <DessertPlaceholder variant={1} />
+                <img
+                  src={louaImg}
+                  alt="G Laban Lou'a — chocolate &amp; matcha bowl with strawberries"
+                  loading="eager"
+                  draggable={false}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-[10px] uppercase tracking-[0.18em] text-primary/70">
+                  <span className="font-serif text-primary font-semibold">Signature</span>
+                  <span>Lou&rsquo;a</span>
+                </div>
               </motion.div>
             </div>
 

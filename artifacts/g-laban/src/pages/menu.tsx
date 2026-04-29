@@ -108,6 +108,9 @@ export default function MenuPage() {
                   category="Arabian Desserts"
                   description={item.description}
                   variant={i}
+                  image={item.image}
+                  imageFit={item.imageFit}
+                  imageBg={item.imageBg}
                 />
               </motion.div>
             ))}

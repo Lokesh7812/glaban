@@ -8,17 +8,53 @@ export type DessertCardProps = {
   variant?: number;
   arabicName?: string;
   tamilName?: string;
+  image?: string;
+  imageFit?: "cover" | "contain";
+  imageBg?: "light" | "dark";
 };
 
-export function DessertCard({ name, category, description, variant = 0, arabicName, tamilName }: DessertCardProps) {
+export function DessertCard({
+  name,
+  category,
+  description,
+  variant = 0,
+  arabicName,
+  tamilName,
+  image,
+  imageFit = "cover",
+  imageBg = "light",
+}: DessertCardProps) {
   return (
     <motion.article
       whileHover={{ y: -6 }}
       transition={{ type: "spring", stiffness: 220, damping: 22 }}
       className="group relative bg-card border border-card-border rounded-[24px] overflow-hidden shadow-sm hover:shadow-xl transition-shadow"
     >
-      <div className="aspect-[4/3] w-full overflow-hidden">
-        <DessertPlaceholder variant={variant} className="transition-transform duration-700 group-hover:scale-105" />
+      <div
+        className={`aspect-[4/3] w-full overflow-hidden relative ${
+          image
+            ? imageBg === "dark"
+              ? "bg-gradient-to-br from-[hsl(224,72%,16%)] via-primary to-[hsl(224,72%,22%)]"
+              : "bg-gradient-to-br from-secondary/60 via-white to-secondary/40"
+            : ""
+        }`}
+      >
+        {image ? (
+          <img
+            src={image}
+            alt={name}
+            loading="lazy"
+            draggable={false}
+            className={`w-full h-full transition-transform duration-700 group-hover:scale-105 ${
+              imageFit === "contain" ? "object-contain p-4" : "object-cover"
+            }`}
+          />
+        ) : (
+          <DessertPlaceholder
+            variant={variant}
+            className="transition-transform duration-700 group-hover:scale-105"
+          />
+        )}
       </div>
 
       <div className="absolute top-4 left-4">
