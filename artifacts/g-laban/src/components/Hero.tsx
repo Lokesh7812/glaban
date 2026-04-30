@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import { MapPin, MessageCircle, ArrowRight } from "lucide-react";
 import { Button } from "./Button";
 import { SITE } from "@/lib/site";
-import louaImg from "@assets/Lou_a_1777519996539.jpeg";
-import cheeseBombImg from "@assets/cheese_bomb_1777519996539.jpeg";
+import louaImg from "@assets/Lou_a_1777555306967.jpeg";
+import cheeseBombImg from "@assets/cheese_bomb_1777555306967.jpeg";
 
 export function Hero() {
   return (
