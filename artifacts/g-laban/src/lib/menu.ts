@@ -1,10 +1,10 @@
-import cheeseBombImg from "@assets/cheesebomb_1777474192823.jpeg";
-import salankatiaImg from "@assets/Salankatia__1777474192820.png";
-import koushriImg from "@assets/Koushri_1777474192821.png";
-import louaImg from "@assets/lou_a_1777474192820.png";
-import hebaCakeImg from "@assets/pistachio_belgium_chocolate_1777474192821.jpeg";
-import fazeaCakeImg from "@assets/fazea_choko_1777474192822.jpeg";
-import deParisImg from "@assets/de_paris_1777474192822.jpeg";
+import cheeseBombImg from "@assets/cheese_bomb_1777519996539.jpeg";
+import salankatiaImg from "@assets/Salankatia_1777519996540.jpeg";
+import koushriImg from "@assets/Koushri_1777519996540.jpeg";
+import louaImg from "@assets/Lou_a_1777519996539.jpeg";
+import hebaCakeImg from "@assets/pistachio_belgium_chocolate_1777519996540.jpeg";
+import fazeaCakeImg from "@assets/Fazea_chocola_cake_1777519996538.jpeg";
+import deParisImg from "@assets/de_paris_1777519996539.jpeg";
 
 export type MenuCategory = "Cakes" | "Laban Specials" | "Kunafa Specials";
 

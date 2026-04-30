@@ -19,7 +19,7 @@ import { CTABanner } from "@/components/CTABanner";
 import { MapEmbed } from "@/components/MapEmbed";
 import { Button } from "@/components/Button";
 import { OrnamentDivider } from "@/components/SectionDivider";
-import hebaCakeImg from "@assets/pistachio_belgium_chocolate_1777474192821.jpeg";
+import hebaCakeImg from "@assets/pistachio_belgium_chocolate_1777519996540.jpeg";
 import { MENU } from "@/lib/menu";
 import { SITE } from "@/lib/site";
 import { useSeo } from "@/lib/seo";
