@@ -1,11 +1,48 @@
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { MapPin, MessageCircle, ArrowRight } from "lucide-react";
 import { Button } from "./Button";
 import { SITE } from "@/lib/site";
 
+function Typewriter({ strings }: { strings: string[] }) {
+  const [currentStringIndex, setCurrentStringIndex] = useState(0);
+  const [currentText, setCurrentText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    const targetString = strings[currentStringIndex];
+    let timeout: NodeJS.Timeout;
+
+    if (!isDeleting && currentText === targetString) {
+      timeout = setTimeout(() => setIsDeleting(true), 2500);
+    } else if (isDeleting && currentText === "") {
+      setIsDeleting(false);
+      setCurrentStringIndex((prev) => (prev + 1) % strings.length);
+    } else {
+      const delay = isDeleting ? 30 : 70;
+      timeout = setTimeout(() => {
+        setCurrentText((prev) =>
+          isDeleting
+            ? prev.slice(0, -1)
+            : targetString.slice(0, prev.length + 1)
+        );
+      }, delay);
+    }
+
+    return () => clearTimeout(timeout);
+  }, [currentText, isDeleting, currentStringIndex, strings]);
+
+  return (
+    <span className={currentStringIndex === 0 ? "font-tamil" : "font-serif italic"}>
+      {currentText}
+      <span className="animate-[pulse_1s_infinite] border-r-[3px] border-accent ml-[4px] h-[1em] inline-block align-middle" style={{ marginTop: '-4px' }} />
+    </span>
+  );
+}
+
 export function Hero() {
   return (
-    <section className="relative pt-40 md:pt-48 pb-32 md:pb-40 overflow-hidden bg-royal-deep flex items-center justify-center min-h-[90vh]">
+    <section className="relative pt-16 md:pt-48 pb-10 md:pb-40 overflow-hidden bg-royal-deep flex items-center justify-center min-h-[90vh]">
       {/* Subtle arabesque overlay */}
       <svg
         className="absolute inset-0 w-full h-full opacity-[0.08]"
@@ -27,24 +64,21 @@ export function Hero() {
         <div className="w-[600px] h-[600px] bg-accent/10 rounded-full blur-[100px]" />
       </div>
 
-      <div className="container-page relative z-10 flex flex-col items-center text-center text-white">
+      <div className="container-page relative z-10 flex flex-col items-center text-center text-white w-full">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="inline-flex items-center gap-3 rounded-full bg-white/10 border border-white/15 backdrop-blur px-5 py-2 text-xs md:text-sm uppercase tracking-[0.25em] text-white/90 mb-10 shadow-lg"
+          className="mt-3 inline-flex items-center justify-center gap-2 rounded-full bg-white/10 border border-white/15 backdrop-blur px-[12px] py-[6px] text-[11px] md:text-sm uppercase tracking-widest text-white/90 shadow-lg"
         >
-          <span className="h-2 w-2 rounded-full bg-accent animate-pulse" />
-          Now Open in Navalur, Chennai
-          <span className="font-arabic text-accent">·</span>
-          Since {SITE.since}
+          NOW OPEN IN NAVALUR, CHENNAI <span className="text-accent">•</span> SINCE 2026
         </motion.div>
 
         <motion.h1
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="font-serif text-5xl sm:text-7xl md:text-8xl lg:text-[6.5rem] leading-[1.05] font-semibold max-w-5xl tracking-tight drop-shadow-lg"
+          className="mt-[14px] font-serif text-[28px] sm:text-7xl md:text-8xl lg:text-[6.5rem] leading-[1.2] sm:leading-[1.05] font-semibold max-w-5xl tracking-tight drop-shadow-lg"
         >
           Authentic <span className="text-accent italic">Arabian</span><br/>
           Desserts <span className="text-white/70">Now in</span> Chennai.
@@ -54,17 +88,16 @@ export function Hero() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="mt-8 font-tamil text-xl md:text-3xl text-accent/90 drop-shadow-md tracking-wide"
-          lang="ta"
+          className="mt-[8px] text-[14px] md:text-3xl text-accent/90 drop-shadow-md tracking-wide min-h-[24px] md:h-[48px] flex items-center justify-center"
         >
-          ருசி · மரபு · நவலூரில் ஒரு புதிய சுவை
+          <Typewriter strings={["ருசி · மரபு · நவலூரில் ஒரு புதிய சுவை", "Taste · Tradition · A new taste in Navalur"]} />
         </motion.div>
 
         <motion.p
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="mt-8 max-w-2xl text-base md:text-xl text-white/80 leading-relaxed font-light"
+          className="mt-[10px] max-w-[90%] md:max-w-2xl text-[13px] md:text-xl text-white/80 leading-relaxed font-light line-clamp-3 md:line-clamp-none mx-auto"
         >
           Indulge in rich, creamy, and exotic laban-based desserts crafted with
           premium ingredients and Middle Eastern tradition — served in the heart
@@ -75,18 +108,18 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="mt-14 flex flex-wrap items-center justify-center gap-4"
+          className="mt-[14px] flex flex-col md:flex-row flex-wrap items-center justify-center gap-[8px] md:gap-4 w-full"
         >
-          <Button as="a" href="/menu" variant="gold" className="px-8 py-4 md:py-6 text-base md:text-lg rounded-full">
+          <Button as="a" href="/menu" variant="gold" className="w-[90%] md:w-auto h-[44px] md:h-[60px] md:px-8 font-bold text-[15px] md:text-lg rounded-full">
             Explore the Menu
-            <ArrowRight className="h-5 w-5 ml-2" />
+            <ArrowRight className="h-4 w-4 md:h-5 md:w-5 ml-2" />
           </Button>
-          <Button as="a" href={SITE.mapDirections} target="_blank" rel="noopener noreferrer" variant="ghost" className="px-8 py-4 md:py-6 text-base md:text-lg rounded-full backdrop-blur bg-white/5 border border-white/10 hover:bg-white/10">
-            <MapPin className="h-5 w-5 mr-2" />
+          <Button as="a" href={SITE.mapDirections} target="_blank" rel="noopener noreferrer" variant="ghost" className="w-[90%] md:w-auto h-[40px] md:h-[60px] md:px-8 text-sm md:text-lg rounded-full backdrop-blur bg-white/5 border border-white/10 hover:bg-white/10">
+            <MapPin className="h-4 w-4 md:h-5 md:w-5 mr-2" />
             Get Directions
           </Button>
-          <Button as="a" href={SITE.whatsapp.href} target="_blank" rel="noopener noreferrer" variant="secondary" className="px-8 py-4 md:py-6 text-base md:text-lg rounded-full backdrop-blur bg-white/10 hover:bg-white/20 text-white border-none">
-            <MessageCircle className="h-5 w-5 mr-2" />
+          <Button as="a" href={SITE.whatsapp.href} target="_blank" rel="noopener noreferrer" variant="secondary" className="w-[90%] md:w-auto h-[40px] md:h-[60px] md:px-8 text-sm md:text-lg rounded-full backdrop-blur bg-white/10 hover:bg-white/20 text-white border-none">
+            <MessageCircle className="h-4 w-4 md:h-5 md:w-5 mr-2" />
             Order on WhatsApp
           </Button>
         </motion.div>
@@ -95,10 +128,10 @@ export function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="mt-20 flex items-center justify-center gap-8 md:gap-16 text-sm text-white/60 w-full max-w-3xl border-t border-white/10 pt-10"
+          className="mt-8 md:mt-20 flex items-center justify-center gap-8 md:gap-16 text-sm text-white/60 w-full max-w-3xl border-t border-white/10 pt-6 md:pt-10"
         >
           <Stat label="Signature Desserts" value="7+" />
-          <div className="h-10 w-px bg-white/15" />
+          <div className="h-8 md:h-10 w-px bg-white/15" />
           <Stat label="Open" value="All Days" />
           <div className="h-10 w-px bg-white/15 hidden sm:block" />
           <Stat label="Tradition" value="Arabian" className="hidden sm:block" />
