@@ -10,7 +10,6 @@ import {
 import { FeatureCard } from "@/components/FeatureCard";
 import { CTABanner } from "@/components/CTABanner";
 import { OrnamentDivider } from "@/components/SectionDivider";
-import { DessertPlaceholder } from "@/components/DessertPlaceholder";
 import { useSeo } from "@/lib/seo";
 
 const FEATURES = [
@@ -130,16 +129,24 @@ export default function AboutPage() {
       {/* Decorative imagery strip */}
       <section className="container-page pb-16">
         <div className="grid grid-cols-3 gap-4 md:gap-6">
-          {[0, 1, 2].map((i) => (
+          {[
+            { src: "/images/kunafa.png", alt: "Golden sizzling Arabian Kunafa" },
+            { src: "/images/laban.png", alt: "Creamy Arabian Laban dessert" },
+            { src: "/images/baklava.png", alt: "Crispy Arabian Baklava" }
+          ].map((img, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.5, delay: i * 0.08 }}
-              className="aspect-[3/4] rounded-[24px] overflow-hidden shadow-lg"
+              className="aspect-[3/4] rounded-[24px] overflow-hidden shadow-lg relative group"
             >
-              <DessertPlaceholder variant={i} />
+              <img 
+                src={img.src} 
+                alt={img.alt} 
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              />
             </motion.div>
           ))}
         </div>
