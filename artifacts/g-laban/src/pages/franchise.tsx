@@ -10,6 +10,7 @@ import {
   Heart,
   Users,
   Handshake,
+  MapPin,
 } from "lucide-react";
 import { Button } from "@/components/Button";
 import { CTABanner } from "@/components/CTABanner";
@@ -205,6 +206,61 @@ export default function FranchisePage() {
             href={SITE.franchise.emailHref}
             index={2}
           />
+        </div>
+      </section>
+
+      {/* Our First Franchise Location */}
+      <section className="container-page pt-20 md:pt-24">
+        <div className="bg-card border border-card-border rounded-[28px] overflow-hidden shadow-md">
+          <div className="grid md:grid-cols-2">
+            <div className="h-64 md:h-auto bg-muted relative">
+              <img
+                src="/images/franchise-store.jpeg"
+                alt="G Laban First Franchise Store"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-black/10"></div>
+            </div>
+            <div className="p-8 md:p-12 flex flex-col justify-center">
+              <div className="font-arabic text-accent text-sm tracking-[0.3em] uppercase mb-2">
+                ✦ Our First Franchise · <span className="font-tamil normal-case tracking-normal text-base text-accent" lang="ta">முதல் கிளை</span> ✦
+              </div>
+              <h3 className="font-serif text-3xl md:text-4xl text-primary font-semibold leading-tight mb-4">
+                Visit Our Navalur Store
+              </h3>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Experience the premium G Laban dessert destination at our very first franchise location.
+              </p>
+              
+              <div className="space-y-5">
+                <div className="flex items-start gap-4">
+                  <div className="bg-secondary/60 text-primary p-2.5 rounded-xl mt-1">
+                    <MapPin className="h-5 w-5" strokeWidth={1.5} />
+                  </div>
+                  <div>
+                    <h4 className="font-medium text-foreground text-lg mb-1">Address</h4>
+                    <p className="text-muted-foreground leading-relaxed">
+                      NO:/ 389, Rajiv Gandhi Salai,<br />
+                      opposite to Pacifica Tech Park,<br />
+                      Navalur, Chennai, Tamil Nadu 600130
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-4">
+                  <div className="bg-secondary/60 text-primary p-2.5 rounded-xl mt-1">
+                    <Phone className="h-5 w-5" strokeWidth={1.5} />
+                  </div>
+                  <div>
+                    <h4 className="font-medium text-foreground text-lg mb-1">Contact</h4>
+                    <a href="tel:+919962909100" className="text-muted-foreground hover:text-accent transition-colors">
+                      +91 99629 09100
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
