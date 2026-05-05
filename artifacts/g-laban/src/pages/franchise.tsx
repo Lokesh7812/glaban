@@ -226,7 +226,7 @@ export default function FranchisePage() {
                 ✦ Our First Franchise · <span className="font-tamil normal-case tracking-normal text-base text-accent" lang="ta">முதல் கிளை</span> ✦
               </div>
               <h3 className="font-serif text-3xl md:text-4xl text-primary font-semibold leading-tight mb-4">
-                Visit Our Navalur Store
+                Visit Our Navalur Franchise
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
                 Experience the premium G Laban dessert destination at our very first franchise location.

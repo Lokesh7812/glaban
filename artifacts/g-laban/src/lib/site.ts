@@ -14,7 +14,7 @@ export const SITE = {
   },
   whatsapp: {
     display: "+91 99629 09100",
-    href: "https://wa.me/919962909100?text=Hello%20G%20Laban%2C%20I%27d%20like%20to%20place%20an%20order.",
+    href: "https://wa.me/919962909100?text=Hello%20G%20Laban%2C%20I%27m%20Interested%20in%20a%20Franchise%20Enquiry",
     franchise:
       "https://wa.me/919962909100?text=Hello%20G%20Laban%2C%20I%27m%20Interested%20in%20a%20Franchise%20Enquiry%20",
   },

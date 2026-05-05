@@ -71,7 +71,7 @@ export function Hero() {
           transition={{ duration: 0.6 }}
           className="mt-3 inline-flex items-center justify-center gap-2 rounded-full bg-white/10 border border-white/15 backdrop-blur px-[12px] py-[6px] text-[11px] md:text-sm uppercase tracking-widest text-white/90 shadow-lg"
         >
-          NOW OPEN IN ROYAPETTAH, CHENNAI <span className="text-accent">•</span> SINCE 2026
+          NOW OPEN IN CHENNAI <span className="text-accent">•</span> SINCE 2026
         </motion.div>
 
         <motion.h1
@@ -101,7 +101,7 @@ export function Hero() {
         >
           Indulge in rich, creamy, and exotic laban-based desserts crafted with
           premium ingredients and Middle Eastern tradition — served in the heart
-          of <span className="font-tamil font-normal text-white" lang="ta">ராயப்பேட்டை</span>.
+          of <span className="font-tamil font-normal text-white" lang="ta">சென்னை</span>.
         </motion.p>
 
         <motion.div
