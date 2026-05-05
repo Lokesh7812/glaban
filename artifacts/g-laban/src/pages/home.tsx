@@ -166,10 +166,11 @@ export default function HomePage() {
               A taste of the Middle East, <span className="italic">at home</span> in <span className="font-tamil text-primary" lang="ta">சென்னை</span>.
             </h2>
             <p className="mt-5 text-muted-foreground text-base md:text-lg leading-relaxed">
-              G Laban began with a simple craving — for the velvety laban desserts,
-              honey-soaked kunafa, and saffron-kissed cakes that define Arabian
-              hospitality. We brought those recipes to Royapettah, refined them with
-              the finest ingredients, and dressed them in a warm, modern setting.
+              G Laban was born from a simple craving — a desire for authentic laban desserts, perfectly crispy kunafa, and the rich, indulgent flavours that define true Arabian hospitality.
+
+We brought these timeless recipes to Chennai, elevating them with the finest ingredients and a touch of modern craftsmanship. Every dessert is carefully curated to deliver not just taste, but an experience — one that blends tradition with elegance.
+
+Set in a warm, contemporary space, G Laban is more than a dessert destination — it’s where culture, flavour, and comfort come together.
             </p>
             <p className="mt-4 text-muted-foreground text-base leading-relaxed">
               Every dessert we serve is a small invitation: <em>slow down, taste

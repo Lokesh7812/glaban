@@ -93,16 +93,12 @@ export default function AboutPage() {
               The first time you taste a real Arabian laban dessert, something quiet happens — a memory you've never had comes back to you. That feeling is the reason G Laban exists.
             </p>
             <p>
-              We grew up around dessert tables that felt like ceremonies — silver
-              trays of golden kunafa still sizzling from the pan, bowls of cooled
-              laban dressed with rosewater and pistachio, slow-cooked milk reduced
-              to silk over low flames. These weren't desserts for the end of a meal;
-              they were the meal, the conversation, the welcome. And for years, we
-              wondered why a city as alive as Chennai didn't have a place that
-              served them this way.
+              We grew up around dessert tables that felt like ceremonies — different bases served in boxes, topped with golden, crispy kunafa, sometimes layered with crunchy baklava. Bowls of chilled laban were dressed with rich, premium flavours and finished with a generous sprinkle of crunchy nuts on top.
+
+These weren’t desserts served at the end of a meal; they were the meal, the conversation, the welcome. And for years, we wondered why a city as vibrant as Chennai didn’t have a place that served them this way.
             </p>
             <p>
-              In 2026, on Avai Shanmugam Salai, Royapettah, we
+              In 2026, on Navalur , Royapettah, we
               opened that place. We brought traditional recipes from the Middle
               East, paired them with the highest-quality ingredients we could
               source, and built G Laban to feel like the homes we remember —

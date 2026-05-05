@@ -38,7 +38,7 @@ export const MENU: MenuItem[] = [
     name: "Salankatia",
     arabicName: "سلانكتية",
     tamilName: "சலாங்கடியா",
-    category: "Laban Specials",
+    category: "Kunafa Specials",
     description:
       "A delicate Levantine layered dessert of cream, slow-cooked milk, and toasted nuts — rich, silky, and unmistakably Arabian.",
     image: salankatiaImg,
@@ -50,7 +50,7 @@ export const MENU: MenuItem[] = [
     name: "Koushri",
     arabicName: "كشري حلو",
     tamilName: "கௌஷ்ரி",
-    category: "Laban Specials",
+    category: "Kunafa Specials",
     description:
       "A house signature built from layers of laban-infused cream, crisp pastry, and pistachio — a quiet luxury in every spoon.",
     image: koushriImg,
@@ -86,7 +86,7 @@ export const MENU: MenuItem[] = [
     name: "Fazea Chocola Cake",
     arabicName: "كيك فزاع شوكولا",
     tamilName: "ஃபஸியா சாக்லேட் கேக்",
-    category: "Cakes",
+    category: "Laban Specials",
     description:
       "A bold, deeply indulgent chocolate cake — Arabian cocoa meets velvet ganache, finished with a touch of edible gold leaf.",
     image: fazeaCakeImg,
@@ -98,7 +98,7 @@ export const MENU: MenuItem[] = [
     name: "De Paris",
     arabicName: "دو باري",
     tamilName: "டே பாரிஸ்",
-    category: "Cakes",
+    category: "Laban Specials",
     description:
       "A Parisian-Arabian crossover — airy mousse, hazelnut praline crunch, and a delicate laban cream finish that melts on the tongue.",
     image: deParisImg,
