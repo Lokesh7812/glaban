@@ -90,7 +90,7 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mt-[8px] text-[14px] md:text-3xl text-accent/90 drop-shadow-md tracking-wide min-h-[24px] md:h-[48px] flex items-center justify-center"
         >
-          <Typewriter strings={["Taste · Tradition · A new taste in Royapettah"]} />
+          <Typewriter strings={["Taste · Tradition · A new taste in Chennai"]} />
         </motion.div>
 
         <motion.p
