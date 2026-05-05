@@ -48,7 +48,7 @@ export default function ContactPage() {
           <p className="mt-5 text-lg text-white/75">
             Whether you'd like to drop by, place an order, or simply say hello — we'd love to hear from you.{" "}
             <span className="font-tamil text-white" lang="ta">
-              நவலூரில் சந்திப்போம்.
+              நாவலூரில் சந்திப்போம்.
             </span>
           </p>
         </div>
