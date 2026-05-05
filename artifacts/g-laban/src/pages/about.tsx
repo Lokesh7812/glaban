@@ -98,7 +98,7 @@ export default function AboutPage() {
 These weren’t desserts served at the end of a meal; they were the meal, the conversation, the welcome. And for years, we wondered why a city as vibrant as Chennai didn’t have a place that served them this way.
             </p>
             <p>
-              In 2026, our journey took shape with the opening of our first franchise in Navalur, Royapettah, we
+              In 2026, our journey took shape with the opening of our first franchise in Navalur. We
               opened that place. We brought traditional recipes from the Middle
               East, paired them with the highest-quality ingredients we could
               source, and built G Laban to feel like the homes we remember —
