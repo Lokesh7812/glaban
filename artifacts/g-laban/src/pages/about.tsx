@@ -126,9 +126,9 @@ These weren’t desserts served at the end of a meal; they were the meal, the co
       <section className="container-page pb-16">
         <div className="grid grid-cols-3 gap-4 md:gap-6">
           {[
-            { src: "/images/kunafa.png", alt: "Golden sizzling Arabian Kunafa" },
-            { src: "/images/laban.png", alt: "Creamy Arabian Laban dessert" },
-            { src: "/images/baklava.png", alt: "Crispy Arabian Baklava" }
+            { src: "/images/cheese_bomb.jpeg", alt: "Delicious Cheese Bomb" },
+            { src: "/images/fazea_chocola_cake.jpeg", alt: "Fazea Chocola Cake" },
+            { src: "/images/de_paris.jpeg", alt: "De Paris Dessert" }
           ].map((img, i) => (
             <motion.div
               key={i}
