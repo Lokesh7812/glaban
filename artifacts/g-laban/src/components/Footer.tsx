@@ -24,7 +24,7 @@ export function Footer() {
         <div className="grid gap-12 md:grid-cols-4">
           <div className="md:col-span-1">
             <div className="flex items-center gap-3">
-              <img src="/logo.png" alt="G Laban" className="h-12 w-12 brightness-0 invert opacity-95" />
+              <img src="/logo.png" alt="G Laban" className="h-12 w-12 object-contain" />
               <div>
                 <div className="font-serif text-2xl font-semibold">G Läbän</div>
                 <div className="text-[11px] uppercase tracking-[0.22em] text-white/60">
