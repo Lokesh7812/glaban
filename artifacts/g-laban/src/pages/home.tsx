@@ -36,7 +36,7 @@ const FEATURES = [
 export default function HomePage() {
   useSeo(
     "G Laban — Authentic Arabian Desserts in Chennai",
-    "Indulge in authentic Arabian desserts at G Laban, Navalur, Chennai — cheese bombs, kunafa, laban specials, and signature cakes. Open all days.",
+    "Indulge in authentic Arabian desserts at G Laban, Royapettah, Chennai — cheese bombs, kunafa, laban specials, and signature cakes. Open all days.",
   );
 
   const featured = MENU.slice(0, 4);
@@ -57,7 +57,7 @@ export default function HomePage() {
           <p className="mt-4 text-muted-foreground text-base md:text-lg leading-relaxed">
             Six reasons our desserts are unlike anything else in the city —{" "}
             <span className="font-tamil text-primary/80" lang="ta">
-              ஒவ்வொரு கடியும் ஒரு அனுபவம்.
+              ஒவ்வொரு சுவையும் ஒரு அனுபவம்
             </span>
           </p>
         </div>
@@ -81,7 +81,7 @@ export default function HomePage() {
                 Featured Desserts
               </h2>
               <p className="mt-4 text-muted-foreground text-base md:text-lg leading-relaxed">
-                A glimpse of the indulgences waiting for you at our Navalur store.
+                A glimpse of the indulgences waiting for you at our Royapettah store.
               </p>
             </div>
             <Link
@@ -168,7 +168,7 @@ export default function HomePage() {
             <p className="mt-5 text-muted-foreground text-base md:text-lg leading-relaxed">
               G Laban began with a simple craving — for the velvety laban desserts,
               honey-soaked kunafa, and saffron-kissed cakes that define Arabian
-              hospitality. We brought those recipes to Navalur, refined them with
+              hospitality. We brought those recipes to Royapettah, refined them with
               the finest ingredients, and dressed them in a warm, modern setting.
             </p>
             <p className="mt-4 text-muted-foreground text-base leading-relaxed">

@@ -126,7 +126,7 @@ export default function MenuPage() {
 
       <CTABanner
         title="Hungry already? We're ready when you are."
-        subtitle="Visit our Navalur store, or place an order on WhatsApp — we'll have it freshly prepared."
+        subtitle="Visit our Royapettah store, or For contact — we'll have it freshly prepared."
       />
     </div>
   );

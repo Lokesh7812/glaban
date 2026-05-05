@@ -15,7 +15,7 @@ export function WhatsAppFloat() {
         <FaWhatsapp className="h-7 w-7" />
       </span>
       <span className="absolute right-16 top-1/2 -translate-y-1/2 whitespace-nowrap rounded-full bg-primary text-primary-foreground text-xs font-medium px-3 py-1.5 shadow-md opacity-0 translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all hidden md:block">
-        Order on WhatsApp
+        For contact
       </span>
     </a>
   );

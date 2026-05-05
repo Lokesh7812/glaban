@@ -3,14 +3,14 @@ export const SITE = {
   tagline: "Taste the richness. Feel the tradition. Experience G Laban.",
   since: 2026,
   address: {
-    line1: "NO:/ 389, Rajiv Gandhi Salai",
-    line2: "Opposite Pacifica Tech Park, Navalur",
-    city: "Chennai, Tamil Nadu — 600130",
-    full: "NO:/ 389, Rajiv Gandhi Salai, opposite to Pacifica Tech Park, Navalur, Chennai, Tamil Nadu – 600130",
+    line1: "No.199, Avai Shanmugam Salai",
+    line2: "Royapettah",
+    city: "Chennai - 600044",
+    full: "No.199, Avai Shanmugam Salai, Royapettah, Chennai -600044",
   },
   phone: {
-    display: "+91 98849 09199",
-    tel: "tel:+919884909199",
+    display: "+91 99629 09100",
+    tel: "tel:+919962909100",
   },
   whatsapp: {
     display: "+91 99629 09100",
@@ -38,7 +38,7 @@ export const SITE = {
     youtube: "https://youtube.com/@glaban4",
   },
   mapEmbed:
-    "https://www.google.com/maps?q=389+Rajiv+Gandhi+Salai+Navalur+Chennai+600130&output=embed",
+    "https://www.google.com/maps?q=No.199+Avai+Shanmugam+Salai+Royapettah+Chennai+600044&output=embed",
   mapDirections:
-    "https://www.google.com/maps/dir/?api=1&destination=389+Rajiv+Gandhi+Salai+Navalur+Chennai+600130",
+    "https://www.google.com/maps/dir/?api=1&destination=No.199+Avai+Shanmugam+Salai+Royapettah+Chennai+600044",
 };

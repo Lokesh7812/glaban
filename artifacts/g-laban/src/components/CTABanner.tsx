@@ -55,7 +55,7 @@ export function CTABanner({
                 variant="ghost"
               >
                 <MessageCircle className="h-4 w-4" />
-                Order on WhatsApp
+                For contact
               </Button>
             </div>
           </div>

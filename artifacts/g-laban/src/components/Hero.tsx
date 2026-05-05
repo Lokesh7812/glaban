@@ -71,7 +71,7 @@ export function Hero() {
           transition={{ duration: 0.6 }}
           className="mt-3 inline-flex items-center justify-center gap-2 rounded-full bg-white/10 border border-white/15 backdrop-blur px-[12px] py-[6px] text-[11px] md:text-sm uppercase tracking-widest text-white/90 shadow-lg"
         >
-          NOW OPEN IN NAVALUR, CHENNAI <span className="text-accent">•</span> SINCE 2026
+          NOW OPEN IN ROYAPETTAH, CHENNAI <span className="text-accent">•</span> SINCE 2026
         </motion.div>
 
         <motion.h1
@@ -90,7 +90,7 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mt-[8px] text-[14px] md:text-3xl text-accent/90 drop-shadow-md tracking-wide min-h-[24px] md:h-[48px] flex items-center justify-center"
         >
-          <Typewriter strings={["ருசி · மரபு · நவலூரில் ஒரு புதிய சுவை", "Taste · Tradition · A new taste in Navalur"]} />
+          <Typewriter strings={["Taste · Tradition · A new taste in Royapettah"]} />
         </motion.div>
 
         <motion.p
@@ -101,7 +101,7 @@ export function Hero() {
         >
           Indulge in rich, creamy, and exotic laban-based desserts crafted with
           premium ingredients and Middle Eastern tradition — served in the heart
-          of <span className="font-tamil font-normal text-white" lang="ta">நவலூர்</span>.
+          of <span className="font-tamil font-normal text-white" lang="ta">ராயப்பேட்டை</span>.
         </motion.p>
 
         <motion.div
@@ -120,7 +120,7 @@ export function Hero() {
           </Button>
           <Button as="a" href={SITE.whatsapp.href} target="_blank" rel="noopener noreferrer" variant="secondary" className="w-[90%] md:w-auto h-[40px] md:h-[60px] md:px-8 text-sm md:text-lg rounded-full backdrop-blur bg-white/10 hover:bg-white/20 text-white border-none">
             <MessageCircle className="h-4 w-4 md:h-5 md:w-5 mr-2" />
-            Order on WhatsApp
+            For contact
           </Button>
         </motion.div>
 

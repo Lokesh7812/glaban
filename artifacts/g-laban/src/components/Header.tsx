@@ -77,7 +77,7 @@ export function Header({ transparentOverHero = false }: { transparentOverHero?: 
             }`}
           >
             <MessageCircle className="h-4 w-4" />
-            Order on WhatsApp
+            For contact
           </a>
         </div>
 
@@ -122,7 +122,7 @@ export function Header({ transparentOverHero = false }: { transparentOverHero?: 
             className="mt-3 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full text-sm font-semibold bg-primary text-primary-foreground"
           >
             <MessageCircle className="h-4 w-4" />
-            Order on WhatsApp
+            For contact
           </a>
         </div>
       </div>

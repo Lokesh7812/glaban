@@ -18,7 +18,7 @@ import { useSeo } from "@/lib/seo";
 export default function ContactPage() {
   useSeo(
     "Contact & Visit — G Laban",
-    "Visit G Laban at Navalur, Chennai. Call, WhatsApp, email, or get directions. Open all days for an Arabian dessert experience.",
+    "Visit G Laban at Royapettah, Chennai. Call, WhatsApp, email, or get directions. Open all days for an Arabian dessert experience.",
   );
 
   return (
@@ -108,7 +108,7 @@ export default function ContactPage() {
                 ✦ Our Address ✦
               </div>
               <h2 className="mt-2 font-serif text-3xl md:text-4xl text-primary font-semibold leading-tight">
-                G Laban, Navalur
+                G Laban, Royapettah
               </h2>
             </div>
 

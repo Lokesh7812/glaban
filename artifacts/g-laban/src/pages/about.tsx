@@ -24,7 +24,7 @@ const FEATURES = [
 export default function AboutPage() {
   useSeo(
     "Our Story — G Laban",
-    "Discover the story behind G Laban — bringing authentic Arabian dessert tradition to Navalur, Chennai with premium ingredients and warm hospitality.",
+    "Discover the story behind G Laban — bringing authentic Arabian dessert tradition to Royapettah, Chennai with premium ingredients and warm hospitality.",
   );
 
   return (
@@ -102,7 +102,7 @@ export default function AboutPage() {
               served them this way.
             </p>
             <p>
-              In 2026, on Rajiv Gandhi Salai opposite Pacifica Tech Park, we
+              In 2026, on Avai Shanmugam Salai, Royapettah, we
               opened that place. We brought traditional recipes from the Middle
               East, paired them with the highest-quality ingredients we could
               source, and built G Laban to feel like the homes we remember —
