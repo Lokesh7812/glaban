@@ -3,10 +3,10 @@ export const SITE = {
   tagline: "Taste the richness. Feel the tradition. Experience G Laban.",
   since: 2026,
   address: {
-    line1: "No.199, Avai Shanmugam Salai",
+    line1: "No.199, V.P. Raman Road",
     line2: "Royapettah",
     city: "Chennai - 600014",
-    full: "No.199, Avai Shanmugam Salai, Royapettah, Chennai - 600014",
+    full: "No.199,  V.P. Raman Road, Royapettah, Chennai - 600014",
   },
   phone: {
     display: "+91 99629 09100",
